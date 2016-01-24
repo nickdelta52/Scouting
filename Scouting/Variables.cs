@@ -7,6 +7,6 @@ namespace Scouting
 {
     public class Variables
     {
-
+        int var = 1;
     }
 }
