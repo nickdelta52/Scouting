@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MatchScout.aspx.cs" Inherits="Scouting.MatchScout" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MainForm.aspx.cs" Inherits="Scouting.MainForm" %>
 
 <!DOCTYPE html>
 

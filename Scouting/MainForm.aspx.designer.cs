@@ -11,7 +11,7 @@ namespace Scouting
 {
 
 
-    public partial class PitScout
+    public partial class MainForm
     {
 
         /// <summary>
