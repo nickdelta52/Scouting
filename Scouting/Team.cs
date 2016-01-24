@@ -8,9 +8,15 @@ namespace Scouting
     public class Team
     {
         public int number;
-        public Team(int _number)
+        public bool[] defenses;
+        public Team(int _number, int _defensesbin)
         {
             this.number = _number;
+            defenses = new bool[9];
+            for (int i = 0; i < 9; i++)
+            {
+                
+            }
         }
     }
 }
