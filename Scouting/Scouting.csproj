@@ -75,18 +75,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="PitScout.aspx" />
     <Content Include="Web.config" />
     <Content Include="MainMenu.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PitScout.aspx.cs">
-      <DependentUpon>PitScout.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PitScout.aspx.designer.cs">
-      <DependentUpon>PitScout.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainMenu.aspx.cs">
       <DependentUpon>MainMenu.aspx</DependentUpon>
@@ -95,6 +87,7 @@
     <Compile Include="MainMenu.aspx.designer.cs">
       <DependentUpon>MainMenu.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Variables.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
