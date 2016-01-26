@@ -26,7 +26,7 @@
                 
                 &nbsp;&nbsp;&nbsp; 
                 
-                <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" OnTextChanged="DropDownList1_SelectedIndexChanged" Width="160px">
+                <asp:DropDownList ID="DropDownList1" runat="server" Width="160px">
                     <asp:ListItem>Portcullis</asp:ListItem>
                     <asp:ListItem>Cheval de Frise</asp:ListItem>
                     <asp:ListItem>Ramparts</asp:ListItem>
@@ -37,6 +37,8 @@
                     <asp:ListItem>Rough Terrain</asp:ListItem>
                     <asp:ListItem>Low Bar</asp:ListItem>
                 </asp:DropDownList>
+                &nbsp;
+                <asp:Button ID="btnSort" runat="server" Text="Sort!" OnClick="btnSort_Click" />
                 <br />
                 <asp:ListBox ID="lbTeams" runat="server" BackColor="White" Width="80px" Rows="10"></asp:ListBox>
                 &nbsp;&nbsp;&nbsp;

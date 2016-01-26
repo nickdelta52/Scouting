@@ -10,7 +10,7 @@ namespace Scouting
     public partial class MainForm : System.Web.UI.Page
     {
         public Team[] teams = new Team[6000];
-        static public string[] defenses = new string[9] {"Portcullis", "Cheval de Frise", "Ramparts", "Moat", "Drawbridge", "Sally Port", "Rock Wall", "Rought Terrain", "Low Bar"};
+        static public string[] defenses = new string[9] {"Portcullis", "Cheval de Frise", "Ramparts", "Moat", "Drawbridge", "Sally Port", "Rock Wall", "Rough Terrain", "Low Bar"};
         
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -50,24 +50,32 @@ namespace Scouting
             parent.Controls.Add(view);
         }
 
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        { //this should work, but the event isn't happening at all
+        protected void btnSort_Click(object sender, EventArgs e)
+        {
+            lbTeams.Items.Clear();
+            lbStat.Items.Clear();
             string selected = DropDownList1.SelectedValue;
             int key = Array.IndexOf(defenses, selected);
             foreach (Team team in teams)
             {
-                if (team.defenses[key])
+                if (team != null)
                 {
-                    lbTeams.Items.Add(team.number.ToString());
-                    lbStat.Items.Add(team.defenses[key].ToString());
+                    if (team.defenses[key])
+                    {
+                        lbTeams.Items.Add(team.number.ToString());
+                        lbStat.Items.Add(team.defenses[key].ToString());
+                    }
                 }
             }
             foreach (Team team in teams)
             {
-                if (!team.defenses[key])
+                if (team != null)
                 {
-                    lbTeams.Items.Add(team.number.ToString());
-                    lbStat.Items.Add(team.defenses[key].ToString());
+                    if (!team.defenses[key])
+                    {
+                        lbTeams.Items.Add(team.number.ToString());
+                        lbStat.Items.Add(team.defenses[key].ToString());
+                    }
                 }
             }
         }
