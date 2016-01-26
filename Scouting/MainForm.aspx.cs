@@ -14,10 +14,10 @@ namespace Scouting
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            newTeam(811, 111111111);
+            newTeam(811,  111111111);
             newTeam(1519, 000000000);
-            newTeam(456, 110101100);
-            newTeam(998, 011100101);
+            newTeam(456,  110101100);
+            newTeam(998,  011100101);
             newTeam(1024, 101011011);
         }
         public void newTeam(int number, int binary)
