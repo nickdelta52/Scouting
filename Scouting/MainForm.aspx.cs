@@ -50,6 +50,13 @@ namespace Scouting
             parent.Controls.Add(view);
         }
 
+        protected void btnShowAll_Click(object sender, EventArgs e)
+        {
+            parent.Controls.Add(match);
+            parent.Controls.Add(pit);
+            parent.Controls.Add(view);
+        }
+
         protected void btnSort_Click(object sender, EventArgs e)
         {
             lbTeams.Items.Clear();

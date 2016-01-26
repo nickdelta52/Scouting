@@ -12,6 +12,8 @@
         <asp:Button ID="btnMatch" runat="server" Text="Match Scouting" OnClick="btnMatch_Click" />
         <asp:Button ID="btnPit" runat="server" Text="Pit Scouting" OnClick="btnPit_Click" />
         <asp:Button ID="btnView" runat="server" Text="View Results" OnClick="btnView_Click" />
+        <asp:Button ID="btnShowAll" runat="server" Text="Show All" OnClick="btnShowAll_Click" Width="130px" />
+                
         <div id ="parent" style ="background-color : #C0C0C0" runat ="server">
             <div id ="match" style ="background-color : #B0C0C0" runat ="server">
                 Match Scouting
