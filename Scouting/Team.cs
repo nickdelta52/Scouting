@@ -15,7 +15,10 @@ namespace Scouting
             defenses = new bool[9];
             for (int i = 0; i < 9; i++)
             {
-                
+                if (_defensesbin.ToString("000000000")[i] == '1')
+                    defenses[i] = true;
+                else
+                    defenses[i] = false;
             }
         }
     }
