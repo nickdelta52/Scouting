@@ -27,7 +27,10 @@
                                                 
                 &nbsp;&nbsp;&nbsp; 
                 
-                <asp:DropDownList ID="lstTeams" runat="server"></asp:DropDownList>
+                <asp:DropDownList ID="lstTeamsPit" runat="server"></asp:DropDownList>
+                <br />
+                <br />
+                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
             </div>
             <div id ="view" style ="background-color : #C0C0B0" runat ="server">
                 View Results

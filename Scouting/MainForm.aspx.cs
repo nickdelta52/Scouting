@@ -24,6 +24,7 @@ namespace Scouting
                 if (team != null)
                 {
                     ddMatchTeam.Items.Add(team.number.ToString());
+                    lstTeamsPit.Items.Add(team.number.ToString());
                 }
             }
         }
