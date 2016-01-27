@@ -7,7 +7,7 @@ namespace Scouting
 {
     static public class Variables
     {
-        
+        static public bool started = false;
 
     }
 }
