@@ -17,8 +17,11 @@
         <div id ="parent" style ="background-color : #C0C0C0" runat ="server">
             <div id ="match" style ="background-color : #B0C0C0" runat ="server">
                 Match Scouting <br />
-                <asp:DropDownList ID="ddMatchTeam" runat="server" Width="240px"></asp:DropDownList> <br />
-                <asp:ListBox ID="lbActions" runat="server" Width="240px"></asp:ListBox>
+                <div display: "flex" justify-content: "space-between">
+                        <asp:DropDownList ID="ddMatchTeam" runat="server" Width="240px"></asp:DropDownList> <br />
+                        <asp:ListBox ID="lbActions" runat="server" Width="240px"></asp:ListBox>
+                        <asp:ListBox ID="ListBox1" runat="server" Width ="240px"></asp:ListBox>
+                </div>
             </div>
             <div id ="pit" style ="background-color : #C0B0C0" runat ="server">
                Pit Scouting
@@ -73,3 +76,4 @@
     </form>
 </body>
 </html>
+
