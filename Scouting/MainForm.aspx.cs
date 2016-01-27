@@ -19,6 +19,13 @@ namespace Scouting
             newTeam(456,  110101100);
             newTeam(998,  011100101);
             newTeam(1024, 101011011);
+            foreach (Team team in teams)
+            {
+                if (team != null)
+                {
+                    ddMatchTeam.Items.Add(team.number.ToString());
+                }
+            }
         }
         public void newTeam(int number, int binary)
         {
@@ -61,7 +68,7 @@ namespace Scouting
         {
             lbTeams.Items.Clear();
             lbStat.Items.Clear();
-            string selected = DropDownList1.SelectedValue;
+            string selected = ddDefense.SelectedValue;
             int key = Array.IndexOf(defenses, selected);
             foreach (Team team in teams)
             {

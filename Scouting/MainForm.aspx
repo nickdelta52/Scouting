@@ -16,8 +16,9 @@
                 
         <div id ="parent" style ="background-color : #C0C0C0" runat ="server">
             <div id ="match" style ="background-color : #B0C0C0" runat ="server">
-                Match Scouting
-
+                Match Scouting <br />
+                <asp:DropDownList ID="ddMatchTeam" runat="server" Width="240px"></asp:DropDownList> <br />
+                <asp:ListBox ID="lbActions" runat="server" Width="240px"></asp:ListBox>
             </div>
             <div id ="pit" style ="background-color : #C0B0C0" runat ="server">
                Pit Scouting
@@ -35,7 +36,7 @@
                 
                 &nbsp;&nbsp;&nbsp; 
                 
-                <asp:DropDownList ID="DropDownList1" runat="server" Width="160px">
+                <asp:DropDownList ID="ddDefense" runat="server" Width="160px">
                     <asp:ListItem>Portcullis</asp:ListItem>
                     <asp:ListItem>Cheval de Frise</asp:ListItem>
                     <asp:ListItem>Ramparts</asp:ListItem>
