@@ -29,8 +29,19 @@
                 
                 <asp:DropDownList ID="lstTeamsPit" runat="server"></asp:DropDownList>
                 <br />
+                <asp:Label ID="lblDefences" runat="server" Text="Defences:"></asp:Label>
                 <br />
-                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                <asp:CheckBoxList ID="chkDefences" runat="server" BackColor="White" BorderColor="#666666" BorderWidth="2px">
+                    <asp:ListItem>Portcullis</asp:ListItem>
+                    <asp:ListItem>Cheval de Frise</asp:ListItem>
+                    <asp:ListItem>Ramparts</asp:ListItem>
+                    <asp:ListItem>Moat</asp:ListItem>
+                    <asp:ListItem>Drawbridge</asp:ListItem>
+                    <asp:ListItem>Sally Port</asp:ListItem>
+                    <asp:ListItem>Rock Wall</asp:ListItem>
+                    <asp:ListItem>Rough Terrain</asp:ListItem>
+                    <asp:ListItem>Low Bar</asp:ListItem>
+                </asp:CheckBoxList>
             </div>
             <div id ="view" style ="background-color : #C0C0B0" runat ="server">
                 View Results
