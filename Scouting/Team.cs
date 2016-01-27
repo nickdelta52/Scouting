@@ -9,6 +9,7 @@ namespace Scouting
     {
         public int number;
         public bool[] defenses;
+        public string[] actions;
         public Team(int _number, int _defensesbin)
         {
             this.number = _number;
@@ -20,6 +21,7 @@ namespace Scouting
                 else
                     defenses[i] = false;
             }
+            actions = new string[120];
         }
     }
 }
