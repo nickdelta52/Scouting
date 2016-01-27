@@ -20,7 +20,13 @@
 
             </div>
             <div id ="pit" style ="background-color : #C0B0C0" runat ="server">
-               pit
+               Pit Scouting
+                <br />
+                <asp:Label ID="Label1" runat="server" Text="Team:" BackColor="White" BorderColor="#666666" BorderWidth="2px"></asp:Label>
+                                                
+                &nbsp;&nbsp;&nbsp; 
+                
+                <asp:DropDownList ID="lstTeams" runat="server"></asp:DropDownList>
             </div>
             <div id ="view" style ="background-color : #C0C0B0" runat ="server">
                 View Results
