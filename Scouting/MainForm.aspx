@@ -8,7 +8,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
         <asp:Button ID="btnMatch" runat="server" Text="Match Scouting" OnClick="btnMatch_Click" />
         <asp:Button ID="btnPit" runat="server" Text="Pit Scouting" OnClick="btnPit_Click" />
         <asp:Button ID="btnView" runat="server" Text="View Results" OnClick="btnView_Click" />
