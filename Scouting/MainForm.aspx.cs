@@ -14,22 +14,22 @@ namespace Scouting
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            newTeam(811,  111111111);
-            newTeam(1519, 000000000);
-            newTeam(456,  110101100);
-            newTeam(998,  011100101);
-            newTeam(1024, 101011011);
-            ddMatchTeam.Items.Clear();
-            lstTeamsPit.Items.Clear();
-            foreach (Team team in teams)
-            {
-                if (team != null)
+                newTeam(811,  111111111);
+                newTeam(1519, 000000000);
+                newTeam(456,  110101100);
+                newTeam(998,  011100101);
+                newTeam(1024, 101011011);
+                ddMatchTeam.Items.Clear();
+                lstTeamsPit.Items.Clear();
+                foreach (Team team in teams)
                 {
-                    ddMatchTeam.Items.Add(team.number.ToString());
-                    lstTeamsPit.Items.Add(team.number.ToString());
+                    if (team != null)
+                    {
+                        ddMatchTeam.Items.Add(team.number.ToString());
+                        lstTeamsPit.Items.Add(team.number.ToString());
+                    }
                 }
             }
-        }
         public void newTeam(int number, int binary)
         {
             bool match = false;
@@ -56,23 +56,27 @@ namespace Scouting
                     }
                 }
             }
+            
         }
 
         protected void btnMatch_Click(object sender, EventArgs e)
         {
-            parent.Controls.Clear();
+            parent.Controls.Remove(pit);
+            parent.Controls.Remove(view);
             parent.Controls.Add(match);
         }
 
         protected void btnPit_Click(object sender, EventArgs e)
         {
-            parent.Controls.Clear();
+            parent.Controls.Remove(match);
+            parent.Controls.Remove(view);
             parent.Controls.Add(pit);
         }
 
         protected void btnView_Click(object sender, EventArgs e)
         {
-            parent.Controls.Clear();
+            parent.Controls.Remove(match);
+            parent.Controls.Remove(pit);
             parent.Controls.Add(view);
         }
 
@@ -111,11 +115,6 @@ namespace Scouting
                     }
                 }
             }
-        }
-
-        protected void btnMatchSelectTeam_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
