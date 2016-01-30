@@ -14,33 +14,46 @@ namespace Scouting
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Variables.started)
+            newTeam(811,  111111111);
+            newTeam(1519, 000000000);
+            newTeam(456,  110101100);
+            newTeam(998,  011100101);
+            newTeam(1024, 101011011);
+            ddMatchTeam.Items.Clear();
+            lstTeamsPit.Items.Clear();
+            foreach (Team team in teams)
             {
-                newTeam(811,  111111111);
-                newTeam(1519, 000000000);
-                newTeam(456,  110101100);
-                newTeam(998,  011100101);
-                newTeam(1024, 101011011);
-                foreach (Team team in teams)
+                if (team != null)
                 {
-                    if (team != null)
-                    {
-                        ddMatchTeam.Items.Add(team.number.ToString());
-                        lstTeamsPit.Items.Add(team.number.ToString());
-                    }
+                    ddMatchTeam.Items.Add(team.number.ToString());
+                    lstTeamsPit.Items.Add(team.number.ToString());
                 }
-                Variables.started = true;
             }
-            
         }
         public void newTeam(int number, int binary)
         {
+            bool match = false;
             for (int i = 0; i < teams.Length; i++)
             {
-                if (teams[i] == null)
+                if (teams[i] != null)
                 {
-                    teams[i] = new Team(number, binary);
-                    break;
+                    if (teams[i].number == number)
+                    {
+                        teams[i] = new Team(number, binary);
+                        match = true;
+                        break;
+                    }
+                }
+            }
+            if (!match)
+            {
+                for (int i = 0; i < teams.Length; i++)
+                {
+                    if (teams[i] == null)
+                    {
+                        teams[i] = new Team(number, binary);
+                        break;
+                    }
                 }
             }
         }
@@ -98,6 +111,11 @@ namespace Scouting
                     }
                 }
             }
+        }
+
+        protected void btnMatchSelectTeam_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

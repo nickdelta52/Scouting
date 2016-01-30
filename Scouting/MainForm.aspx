@@ -18,9 +18,13 @@
             <div id ="match" style ="background-color : #B0C0C0" runat ="server">
                 Match Scouting <br />
                 <div display: "flex" justify-content: "space-between">
-                        <asp:DropDownList ID="ddMatchTeam" runat="server" Width="240px"></asp:DropDownList> <br />
+                        <asp:DropDownList ID="ddMatchTeam" runat="server" Width="240px"></asp:DropDownList> 
+                        <asp:Button ID="btnMatchSelectTeam" runat="server" Height="21px" OnClick="btnMatchSelectTeam_Click" Text="Select Team" Width="121px" />
+                        <br />
                         <asp:ListBox ID="lbActions" runat="server" Width="240px"></asp:ListBox>
-                        <asp:ListBox ID="ListBox1" runat="server" Width ="240px"></asp:ListBox>
+                        <asp:ListBox ID="lbActionsAdd1" runat="server" Width ="120px"></asp:ListBox>
+                        <asp:ListBox ID="lbActionsAdd2" runat="server" Width="120px"></asp:ListBox>
+                        <asp:Button ID="btnAddAction" runat="server" Text="Add Action!!!!!!!!!!! uwu" />
                 </div>
             </div>
             <div id ="pit" style ="background-color : #C0B0C0" runat ="server">
