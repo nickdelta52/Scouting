@@ -46,18 +46,24 @@
                     <asp:ListItem>Low Bar</asp:ListItem>
                 </asp:CheckBoxList>
                     <br />
-                <asp:Label ID="Label2" runat="server" Text="Goals:"></asp:Label>
+                <asp:Label ID="lblGoal" runat="server" Text="Goals:"></asp:Label>
                 <asp:CheckBoxList ID="chkGoals" runat="server" BackColor="White" BorderColor="#666666" BorderWidth="2px">
                     <asp:ListItem>High</asp:ListItem>
                     <asp:ListItem>Low</asp:ListItem>
                 </asp:CheckBoxList>
                 <br />
-                <asp:CheckBoxList ID="CheckBoxList1" runat="server" BackColor="White" BorderColor="#666666" BorderWidth="2px">
+                <asp:CheckBoxList ID="chkClimb" runat="server" BackColor="White" BorderColor="#666666" BorderWidth="2px">
+                    <asp:ListItem>Can Climb</asp:ListItem>
+                </asp:CheckBoxList>
+                <br />
+                <asp:CheckBoxList ID="chkHP" runat="server" BackColor="White" BorderColor="#666666" BorderWidth="2px">
                     <asp:ListItem>Require Human Player Station</asp:ListItem>
                 </asp:CheckBoxList>
                 <br />
-                <asp:CheckBoxList ID="chkClimb" runat="server" BackColor="White" BorderColor="#666666" BorderWidth="2px">
-                    <asp:ListItem>Can Climb</asp:ListItem>
+                <asp:Label ID="lblStartPos" runat="server" Text="Prefered Start Position:"></asp:Label>
+                <asp:CheckBoxList ID="chkStartPos" runat="server" BackColor="White" BorderColor="#666666" BorderWidth="2px">
+                <asp:ListItem>Middle</asp:ListItem>
+                <asp:ListItem>Spy Position</asp:ListItem>
                 </asp:CheckBoxList>
                 <br />
                 <asp:Label ID="lblClimb" runat="server" Text="Drive Train:"></asp:Label>
@@ -65,15 +71,24 @@
                 <asp:TextBox ID="txtDrive" runat="server" BorderColor="#666666" BorderWidth="2px" Height="100px" Width="300px"></asp:TextBox>
                 <br />
                 <br />
-                <asp:Label ID="Label3" runat="server" Text="Intake:"></asp:Label>
+                <asp:Label ID="lblInt" runat="server" Text="Intake:"></asp:Label>
                 <br />
                 <asp:TextBox ID="txtIntake" runat="server" BorderColor="#666666" BorderWidth="2px" Height="100px" Width="300px"></asp:TextBox>
                 <br />
                 <br />
-                <asp:Label ID="lblSpy" runat="server" Text="Spy Bot Abilities:"></asp:Label>
+                <asp:Label ID="lblSpy" runat="server" Text="Spy Bot Capability:"></asp:Label>
                 <br />
                 <asp:TextBox ID="txtSpy" runat="server" BorderColor="#666666" BorderWidth="2px" Height="100px" Width="300px"></asp:TextBox>
-            </div>
+                <br />
+                <br />
+                <asp:Label ID="lblDefCap" runat="server" Text="Defence Capability:"></asp:Label>
+                <br />
+                <asp:TextBox ID="txtDefCap" runat="server" BorderColor="#666666" BorderWidth="2px" Height="100px" Width="300px"></asp:TextBox>
+                <br />
+                <br />
+                <asp:Button ID="btnSubPit" runat="server" Text="Submit" OnClick="btnSubPit_Click" />
+                <br />
+                </div>
             <div id ="view" style ="background-color : #C0C0B0" runat ="server">
                 View Results
                 <br />
@@ -100,7 +115,6 @@
                 <asp:ListBox ID="lbStat" runat="server" Width="160px" Rows="10"></asp:ListBox>
             </div>
         </div>
-    </div>
     </form>
 </body>
 </html>

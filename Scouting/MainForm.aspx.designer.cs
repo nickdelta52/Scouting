@@ -148,13 +148,13 @@ namespace Scouting {
         protected global::System.Web.UI.WebControls.CheckBoxList chkDefences;
         
         /// <summary>
-        /// Label2 control.
+        /// lblGoal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblGoal;
         
         /// <summary>
         /// chkGoals control.
@@ -166,15 +166,6 @@ namespace Scouting {
         protected global::System.Web.UI.WebControls.CheckBoxList chkGoals;
         
         /// <summary>
-        /// CheckBoxList1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList CheckBoxList1;
-        
-        /// <summary>
         /// chkClimb control.
         /// </summary>
         /// <remarks>
@@ -182,6 +173,33 @@ namespace Scouting {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBoxList chkClimb;
+        
+        /// <summary>
+        /// chkHP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList chkHP;
+        
+        /// <summary>
+        /// lblStartPos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblStartPos;
+        
+        /// <summary>
+        /// chkStartPos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList chkStartPos;
         
         /// <summary>
         /// lblClimb control.
@@ -202,13 +220,13 @@ namespace Scouting {
         protected global::System.Web.UI.WebControls.TextBox txtDrive;
         
         /// <summary>
-        /// Label3 control.
+        /// lblInt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label lblInt;
         
         /// <summary>
         /// txtIntake control.
@@ -236,6 +254,33 @@ namespace Scouting {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSpy;
+        
+        /// <summary>
+        /// lblDefCap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDefCap;
+        
+        /// <summary>
+        /// txtDefCap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDefCap;
+        
+        /// <summary>
+        /// btnSubPit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSubPit;
         
         /// <summary>
         /// view control.

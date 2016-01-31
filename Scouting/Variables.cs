@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Scouting
 {
-    static public class Variables
+    public class Variables
     {
 
     }

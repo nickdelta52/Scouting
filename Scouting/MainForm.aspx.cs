@@ -12,7 +12,7 @@ namespace Scouting
         public Team[] teams = new Team[6000];
         static public string[] defenses = new string[9] {"Portcullis", "Cheval de Frise", "Ramparts", "Moat", "Drawbridge", "Sally Port", "Rock Wall", "Rough Terrain", "Low Bar"};
         
-        protected void Page_Load(object sender, EventArgs e)
+        public void Page_Load(object sender, EventArgs e)
         {
                 newTeam(811,  111111111);
                 newTeam(1519, 000000000);
@@ -56,7 +56,6 @@ namespace Scouting
                     }
                 }
             }
-            
         }
 
         protected void btnMatch_Click(object sender, EventArgs e)
@@ -115,6 +114,11 @@ namespace Scouting
                     }
                 }
             }
+        }
+
+        protected void btnSubPit_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
