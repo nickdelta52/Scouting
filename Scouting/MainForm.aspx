@@ -46,6 +46,33 @@
                     <asp:ListItem>Low Bar</asp:ListItem>
                 </asp:CheckBoxList>
                     <br />
+                <asp:Label ID="Label2" runat="server" Text="Goals:"></asp:Label>
+                <asp:CheckBoxList ID="chkGoals" runat="server" BackColor="White" BorderColor="#666666" BorderWidth="2px">
+                    <asp:ListItem>High</asp:ListItem>
+                    <asp:ListItem>Low</asp:ListItem>
+                </asp:CheckBoxList>
+                <br />
+                <asp:CheckBoxList ID="CheckBoxList1" runat="server" BackColor="White" BorderColor="#666666" BorderWidth="2px">
+                    <asp:ListItem>Require Human Player Station</asp:ListItem>
+                </asp:CheckBoxList>
+                <br />
+                <asp:CheckBoxList ID="chkClimb" runat="server" BackColor="White" BorderColor="#666666" BorderWidth="2px">
+                    <asp:ListItem>Can Climb</asp:ListItem>
+                </asp:CheckBoxList>
+                <br />
+                <asp:Label ID="lblClimb" runat="server" Text="Drive Train:"></asp:Label>
+                <br />
+                <asp:TextBox ID="txtDrive" runat="server" BorderColor="#666666" BorderWidth="2px" Height="100px" Width="300px"></asp:TextBox>
+                <br />
+                <br />
+                <asp:Label ID="Label3" runat="server" Text="Intake:"></asp:Label>
+                <br />
+                <asp:TextBox ID="txtIntake" runat="server" BorderColor="#666666" BorderWidth="2px" Height="100px" Width="300px"></asp:TextBox>
+                <br />
+                <br />
+                <asp:Label ID="lblSpy" runat="server" Text="Spy Bot Abilities:"></asp:Label>
+                <br />
+                <asp:TextBox ID="txtSpy" runat="server" BorderColor="#666666" BorderWidth="2px" Height="100px" Width="300px"></asp:TextBox>
             </div>
             <div id ="view" style ="background-color : #C0C0B0" runat ="server">
                 View Results
