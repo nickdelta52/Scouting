@@ -5,8 +5,8 @@ using System.Web;
 
 namespace Scouting
 {
-    public class Variables
+    static public class Variables
     {
-
+        static public Team selected;
     }
 }

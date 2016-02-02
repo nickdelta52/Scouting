@@ -85,6 +85,15 @@ namespace Scouting {
         protected global::System.Web.UI.WebControls.DropDownList ddMatchTeam;
         
         /// <summary>
+        /// btnMatchTeamSelect control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnMatchTeamSelect;
+        
+        /// <summary>
         /// lbActions control.
         /// </summary>
         /// <remarks>
@@ -94,13 +103,31 @@ namespace Scouting {
         protected global::System.Web.UI.WebControls.ListBox lbActions;
         
         /// <summary>
-        /// ListBox1 control.
+        /// lbKey control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBox1;
+        protected global::System.Web.UI.WebControls.ListBox lbKey;
+        
+        /// <summary>
+        /// lbObj control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox lbObj;
+        
+        /// <summary>
+        /// btnAddAction control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddAction;
         
         /// <summary>
         /// pit control.

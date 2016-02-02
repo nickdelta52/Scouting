@@ -120,5 +120,21 @@ namespace Scouting
         {
             
         }
+
+        
+        protected void btnAddAction_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void ddMatchTeam_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void btnMatchTeamSelect_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

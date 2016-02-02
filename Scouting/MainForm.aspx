@@ -16,9 +16,13 @@
         <div id ="parent" style ="background-color : #C0C0C0" runat ="server">
             <div id ="match" style ="background-color : #B0C0C0" runat ="server">
                 Match Scouting <br />
-                        <asp:DropDownList ID="ddMatchTeam" runat="server" Width="240px"></asp:DropDownList> <br />
+                        <asp:DropDownList ID="ddMatchTeam" runat="server" Width="240px" OnSelectedIndexChanged="ddMatchTeam_SelectedIndexChanged"></asp:DropDownList> 
+                <asp:Button ID="btnMatchTeamSelect" runat="server" Height="22px" OnClick="btnMatchTeamSelect_Click" Text="Select Team!" />
+                <br />
                         <asp:ListBox ID="lbActions" runat="server" Width="240px"></asp:ListBox>
-                        <asp:ListBox ID="ListBox1" runat="server" Width ="240px"></asp:ListBox>
+                        <asp:ListBox ID="lbKey" runat="server" Width ="120px"></asp:ListBox>
+                <asp:ListBox ID="lbObj" runat="server" Width="120px"></asp:ListBox>
+                <asp:Button ID="btnAddAction" runat="server" Height="70px" OnClick="btnAddAction_Click" Text="Add Action!" Width="120px" />
             </div>
             <div id ="pit" style ="background-color : #C0B0C0" runat ="server">
                Pit Scouting
